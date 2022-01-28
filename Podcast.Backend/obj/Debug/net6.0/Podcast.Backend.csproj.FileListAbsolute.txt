@@ -1,0 +1,17 @@
+C:\Users\André\Documents\GitHub\podcast\Podcast.Backend\bin\Debug\net6.0\Podcast.Backend.exe
+C:\Users\André\Documents\GitHub\podcast\Podcast.Backend\bin\Debug\net6.0\Podcast.Backend.deps.json
+C:\Users\André\Documents\GitHub\podcast\Podcast.Backend\bin\Debug\net6.0\Podcast.Backend.runtimeconfig.json
+C:\Users\André\Documents\GitHub\podcast\Podcast.Backend\bin\Debug\net6.0\Podcast.Backend.dll
+C:\Users\André\Documents\GitHub\podcast\Podcast.Backend\bin\Debug\net6.0\ref\Podcast.Backend.dll
+C:\Users\André\Documents\GitHub\podcast\Podcast.Backend\bin\Debug\net6.0\Podcast.Backend.pdb
+C:\Users\André\Documents\GitHub\podcast\Podcast.Backend\obj\Debug\net6.0\Podcast.Backend.csproj.AssemblyReference.cache
+C:\Users\André\Documents\GitHub\podcast\Podcast.Backend\obj\Debug\net6.0\Podcast.Backend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\André\Documents\GitHub\podcast\Podcast.Backend\obj\Debug\net6.0\Podcast.Backend.AssemblyInfoInputs.cache
+C:\Users\André\Documents\GitHub\podcast\Podcast.Backend\obj\Debug\net6.0\Podcast.Backend.AssemblyInfo.cs
+C:\Users\André\Documents\GitHub\podcast\Podcast.Backend\obj\Debug\net6.0\Podcast.Backend.csproj.CoreCompileInputs.cache
+C:\Users\André\Documents\GitHub\podcast\Podcast.Backend\obj\Debug\net6.0\Podcast.Backend.dll
+C:\Users\André\Documents\GitHub\podcast\Podcast.Backend\obj\Debug\net6.0\ref\Podcast.Backend.dll
+C:\Users\André\Documents\GitHub\podcast\Podcast.Backend\obj\Debug\net6.0\Podcast.Backend.pdb
+C:\Users\André\Documents\GitHub\podcast\Podcast.Backend\obj\Debug\net6.0\Podcast.Backend.genruntimeconfig.cache
+C:\Users\André\Documents\GitHub\podcast\Podcast.Backend\obj\Debug\net6.0\Podcast.Backend.csproj.CopyComplete
+C:\Users\André\Documents\GitHub\podcast\Podcast.Backend\bin\Debug\net6.0\System.ServiceModel.Syndication.dll
