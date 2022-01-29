@@ -10,14 +10,30 @@ namespace Podcast.Backend
 
     public class SetPodcastProgram
     {
-        
-        public static string GetFeed()
+        public static string GetFeed(int id)
         {
-            string sinapseURL = "https://anchor.fm/s/814b18c/podcast/rss";
-            string nerdcastURL = "https://jovemnerd.com.br/feed-nerdcast";
+            string sinapseURL = "https://anchor.fm/s/814b18c/podcast/rss"; //01
+            string nerdcastURL = "https://jovemnerd.com.br/feed-nerdcast"; //02
 
-            return sinapseURL;
+            string url = "";
+
+            if (id == 01)
+            {
+                url = sinapseURL;
+            }
+            else if (id == 02)
+            {
+                url = nerdcastURL;
+            }
+            else
+            {
+                Console.WriteLine("Erro! ID não cadastrado.");
+            }
+
+            return url;
         }
         
+  
+
     }
 }
