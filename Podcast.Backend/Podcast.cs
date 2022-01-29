@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ServiceModel.Syndication;
+using System.Xml;
 
 namespace Podcast.Backend
 {
@@ -33,7 +34,22 @@ namespace Podcast.Backend
             return url;
         }
         
-  
+        public static void Request()
+        {
+            string url = GetFeed(01);
+            XmlReader reader = XmlReader.Create(url);
+            SyndicationFeed feed = SyndicationFeed.Load(reader);
+            reader.Close();
+            foreach (SyndicationItem item in feed.Items)
+            {
+                String title = item.Title.Text;
+                String summary = item.Summary.Text;
+
+                Console.WriteLine(title);
+                Console.WriteLine(summary);
+                Console.WriteLine("");
+            }
+        }
 
     }
 }
