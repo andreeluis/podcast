@@ -2,6 +2,8 @@
 using System.ServiceModel.Syndication;
 using System.Xml;
 
+using CodeHollow.FeedReader;
+
 namespace Podcast.Backend
 {
     internal class Podcast
@@ -36,20 +38,22 @@ namespace Podcast.Backend
         
         public static void Request()
         {
-            string url = GetFeed(01);
-            XmlReader reader = XmlReader.Create(url);
-            SyndicationFeed feed = SyndicationFeed.Load(reader);
-            reader.Close();
-            foreach (SyndicationItem item in feed.Items)
-            {
-                String title = item.Title.Text;
-                String summary = item.Summary.Text;
+            SyndicationFeed feed = SyndicationFeed.Load(XmlReader.Create(GetFeed(01)));
 
-                Console.WriteLine(title);
-                Console.WriteLine(summary);
-                Console.WriteLine("");
+            if (feed != null)
+            {
+                foreach (var element in feed.Items)
+                {
+                    Console.WriteLine($"Title: {element.Title.Text}");
+                    Console.WriteLine($"Summary: {element.Summary.Text}");
+                    Console.WriteLine($"Publish: {element.PublishDate}");
+
+                    Console.WriteLine($"Link: {element.Links[0].Uri.ToString()}");
+                    Console.WriteLine($"DirectLink: {element.Links[1].Uri.ToString()}");
+
+                    Console.WriteLine($"DirectLink: {element.Categories}");
+                }
             }
         }
-
     }
 }

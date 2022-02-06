@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "CodeHollow.FeedReader/1.2.4": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.1/CodeHollow.FeedReader.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/CodeHollow.FeedReader.dll": {}
+        }
+      },
       "System.ServiceModel.Syndication/6.0.0": {
         "type": "package",
         "compile": {
@@ -17,6 +26,24 @@
     }
   },
   "libraries": {
+    "CodeHollow.FeedReader/1.2.4": {
+      "sha512": "/5nKKK6UGfL0XkBVmXpBny1DiZTFXgLAoXumeR77OINKs9uGxrIKkW+2vHpQnMDlBsKOf+u3OzJYxdwuk8Pz0w==",
+      "type": "package",
+      "path": "codehollow.feedreader/1.2.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "codehollow.feedreader.1.2.4.nupkg.sha512",
+        "codehollow.feedreader.nuspec",
+        "icon.png",
+        "lib/net452/CodeHollow.FeedReader.dll",
+        "lib/netcoreapp2.1/CodeHollow.FeedReader.dll",
+        "lib/netcoreapp2.1/CodeHollow.FeedReader.xml",
+        "lib/netstandard1.3/CodeHollow.FeedReader.dll",
+        "lib/netstandard1.3/CodeHollow.FeedReader.xml"
+      ]
+    },
     "System.ServiceModel.Syndication/6.0.0": {
       "sha512": "cp1mMNG87iJtE0oHXFtfWT6cfski2JNo5iU0siTPi/uN2k1CIJI6FE4jr4v3got2dzt7wBq17fSy44btun9GiA==",
       "type": "package",
@@ -45,6 +72,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "CodeHollow.FeedReader >= 1.2.4",
       "System.ServiceModel.Syndication >= 6.0.0"
     ]
   },
@@ -87,6 +115,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "CodeHollow.FeedReader": {
+            "target": "Package",
+            "version": "[1.2.4, )"
+          },
           "System.ServiceModel.Syndication": {
             "target": "Package",
             "version": "[6.0.0, )"
