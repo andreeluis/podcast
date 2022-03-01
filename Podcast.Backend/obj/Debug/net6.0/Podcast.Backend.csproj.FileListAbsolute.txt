@@ -15,3 +15,4 @@ C:\Users\André\Documents\GitHub\podcast\Podcast.Backend\obj\Debug\net6.0\Podcas
 C:\Users\André\Documents\GitHub\podcast\Podcast.Backend\obj\Debug\net6.0\Podcast.Backend.genruntimeconfig.cache
 C:\Users\André\Documents\GitHub\podcast\Podcast.Backend\obj\Debug\net6.0\Podcast.Backend.csproj.CopyComplete
 C:\Users\André\Documents\GitHub\podcast\Podcast.Backend\bin\Debug\net6.0\System.ServiceModel.Syndication.dll
+C:\Users\André\Documents\GitHub\podcast\Podcast.Backend\bin\Debug\net6.0\CodeHollow.FeedReader.dll

@@ -10,8 +10,8 @@ namespace Podcast.Backend
             Console.WriteLine("[01] Sinapse");
             Console.WriteLine("[02] Nerdcast");
 
-            int idFeed = Int16.Parse(Console.ReadLine());
-            Console.WriteLine(SetPodcastProgram.GetFeed(idFeed));
+            // int idFeed = Int16.Parse(Console.ReadLine());
+            // Console.WriteLine(SetPodcastProgram.GetFeed(idFeed));
             SetPodcastProgram.Request();
         }
     }
