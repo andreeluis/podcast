@@ -1,6 +1,4 @@
-﻿using System.ServiceModel.Syndication;
-using System.Xml;
-using System.Xml.Linq;
+﻿using System.Xml;
 
 namespace podcast.ContentContext
 {
@@ -9,7 +7,21 @@ namespace podcast.ContentContext
         public Episode(Shows show)
         {
             Show = show;
-            GetEpisodes(show.FeedUrl);
+            
+            var reader = XmlReader.Create(show.FeedUrl);
+            var xml = new XmlDocument();
+            xml.Load(reader);
+
+            foreach (XmlNode node in xml.SelectNodes("//item"))
+            {
+                Title = node.SelectSingleNode("title").InnerText;
+                Description = node.SelectSingleNode("description").InnerText;
+                Link = node.SelectSingleNode("link").InnerText;
+                Publication = Convert.ToDateTime(node.SelectSingleNode("pubDate").InnerText);
+                //TODO Duration
+                //TODO Image
+                AudioUrl = node.SelectSingleNode("enclosure/@url").InnerText; 
+            }
         }
 
         public Shows Show { get; set; }
@@ -21,19 +33,5 @@ namespace podcast.ContentContext
         public int EpisodeNumber { get; }
         public string ImageURL { get; }
         public string AudioUrl { get; }
-        
-        public void GetEpisodes(string feedUrl)
-        {
-            XmlReader reader = XmlReader.Create(feedUrl);
-
-            XmlDocument doc = new XmlDocument();
-            doc.Load(reader);
-            string value;
-            foreach (XmlNode node in doc.SelectNodes("//item/title"))
-            {
-                value = node.InnerText;
-                Console.WriteLine(value);
-            }
-        }
     }
 }

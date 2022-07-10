@@ -9,7 +9,8 @@ namespace Podcast
             var entreChavesPod = new Shows("Entre Chaves", "https://feed.podbean.com/entrechavespodcast/feed.xml");
             var teste = new Episode(entreChavesPod);
 
-            Console.WriteLine(teste.Show.Name);
+            Console.WriteLine(teste.AudioUrl);
+            Console.WriteLine(teste.Title);
         }
     }
 }
